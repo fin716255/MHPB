@@ -1,0 +1,72 @@
+.guild-card {
+    position: relative;
+    padding: 20px;
+    background: #2f3136;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s, background 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.guild-card:hover {
+    transform: translateY(-5px);
+    background: #36393f;
+}
+
+.bot-status {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.bot-status.present {
+    background: #43b581;
+    color: white;
+}
+
+.bot-status.not-present {
+    background: #7289da;
+    color: white;
+}
+
+.guild-card.no-bot {
+    opacity: 0.8;
+}
+
+.guild-card.no-bot:hover {
+    opacity: 1;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+.guild-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.no-icon {
+    width: 64px;
+    height: 64px;
+    background: #7289da;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
